@@ -13,8 +13,6 @@ public class SpringframeworkApplication {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(SpringframeworkApplication.class, args);
-
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         Game game = context.getBean("game", Game.class);
